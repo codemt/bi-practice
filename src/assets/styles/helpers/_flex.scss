@@ -1,0 +1,40 @@
+.flex__container{
+  display:flex;
+ }
+
+ .flex__column-one{
+   flex:1;
+ }
+
+ .flex__column-two{
+   flex:2;
+ }
+
+ .justify-space-between {
+   justify-content: space-between;
+ }
+ .justify-space-around {
+   justify-content: space-around;
+ }
+
+ .justify-center {
+   justify-content: center;
+ }
+ .align-item-center{
+   align-items:center;
+ }
+
+ .flex-direction-column{
+   flex-direction: column;
+ }
+
+
+
+ @media only screen and (max-width: 768px) {
+   .no-media-flex {
+     display: block;
+   }
+   .flex-direction-column-mob{
+     flex-direction: column;
+   }
+ }

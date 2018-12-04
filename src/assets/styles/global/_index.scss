@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'home';
+body {
+  @include clearfix;
+  font-family: $font-style-2;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+button {
+  cursor: pointer !important;
+
+  &:focus {
+    outline: none !important;
+  }
+}

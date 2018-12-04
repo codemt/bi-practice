@@ -1,0 +1,305 @@
+.Modal__GetStarted {
+  padding: 20px;
+  color: $black;
+  background: $white;
+  user-select: none;
+  font-family: $font-style-1;
+  border-radius: $default-border-radius;
+
+  &__error {
+    font-size: 17px;
+    color: red;
+  }
+
+  &__dialog {
+    max-width: 80%;
+  }
+
+  &__confirmation {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: $infinity-dark-green;
+  }
+
+  &__actions {
+    position: absolute;
+    width: calc(100% - 20px);
+    margin-top: -10px;
+    margin-left: -10px;
+
+    & button {
+      background: transparent !important;
+      border: none;
+      cursor: pointer;
+      transition: all 0.05s ease-in-out;
+      height: 28px;
+      width: 28px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+
+    &__back {
+      float: left;
+    }
+
+    &__close {
+      float: right;
+    }
+  }
+
+  &__header {
+    font-size: 2rem;
+    font-family: $font-style-1;
+    color: $infinity-dark-green;
+  }
+
+  &__body {
+    font-size: 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__block {
+    position: relative;
+    padding: 1rem;
+    border: 1px solid $infinity-dark-gray-one;
+    justify-content: center;
+    border-radius: $default-border-radius;
+    margin: 0.5rem;
+    user-select: none;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    min-width: 25%;
+
+    &:hover {
+      background: $infinity-dark-gray-one;
+      box-shadow: 0px 5px 10px rgba($infinity-dark-gray-one-rgb, 0.25)
+    }
+
+    &.active {
+      transition: all 0.1s ease-in-out;
+      background: $infinity-blue;
+      color: $white;
+      box-shadow: 0px 5px 10px rgba($infinity-dark-gray-one-rgb, 0.25)
+    }
+
+    & input {
+      display: none;
+      cursor: pointer;
+
+      &+img {
+        display: none;
+      }
+
+      &:checked+img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    & span:first-of-type {
+      text-transform: uppercase;
+      font-family: $font-style-1;
+      display: block;
+    }
+
+    & img {
+      transform: scale(0.8);
+    }
+
+    & span:last-of-type {
+      font-size: 1rem;
+      font-family: $font-style-1;
+      display: block;
+    }
+  }
+
+  &__selectBody {
+    font-size: 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__selectBlock {
+    border: 2px solid $infinity-green;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 25%;
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $infinity-dark-gray-one;
+      box-shadow: 0px 5px 10px rgba($infinity-dark-gray-one-rgb, 0.25)
+    }
+
+    &.active {
+      transition: all 0.1s ease-in-out;
+      background: $infinity-green;
+      color: $white;
+      box-shadow: 0px 5px 10px rgba($infinity-dark-gray-one-rgb, 0.25)
+    }
+
+    & input[type='radio'],
+    input[type='checkbox'] {
+      display: none;
+    }
+  }
+
+  &__formBody {
+    font-size: 1rem;
+    padding: 2rem 4rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  &__selectFormBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & span {
+      display: block;
+      font-size: 1.25rem;
+      font-family: $font-style-1;
+    }
+
+    & input[type='text'],
+    input[type='email'] {
+      margin: 0.5rem;
+      font-family: $font-style-1;
+      display: block;
+      border-radius: 4px;
+      width: 50%;
+      font-size: 1.25rem;
+      font-weight: 300;
+
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+  }
+
+  &__formBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & span {
+      display: block;
+      font-size: 1.25rem;
+      font-family: $font-style-1;
+    }
+
+    & > div {
+      width: 50%;
+      display: flex;
+      margin: 1em 0px;
+      margin-left: -40px;
+
+      & > img {
+        width: 40px;
+        height: 40px;
+        margin: auto 0px;
+      }
+
+      & > div {
+        width: 100%;
+        margin: auto 0px auto 15px;
+      }
+    }
+
+    & input[type='text'],
+    input[type='email'] {
+      display: block;
+      width: 100%;
+      font-family: $font-style-1;
+      display: block;
+      border-radius: 2px;
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: $infinity-dark-grey;
+      padding: 0.5rem 0.5rem 0.25rem 0.5em;
+      box-shadow: 0px 1px 5px 2px rgba($infinity-dark-gray-one-rgb, 0.15);
+      border: 1px solid white;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $infinity-green;
+      }
+
+      &::placeholder {
+        color: $infinity-grey;
+      }
+
+      // error block
+      & + span {
+        position: absolute;
+        font-size: 15px;
+        color: red;
+        text-align: left;
+        margin-top: 2px;
+      }
+    }
+
+  }
+
+  &__footer {
+    font-size: 1.25rem;
+
+    button {
+      font-weight: 500;
+      background: $white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $font-style-1;
+      padding: 10px;
+      color: $infinity-green;
+      border: 2px solid $infinity-green;
+      border-radius: $default-border-radius;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      line-height: 1;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        color: $white;
+        background: $infinity-blue;
+        border-color: $infinity-blue;
+      }
+    }
+  }
+}

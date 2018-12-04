@@ -1,0 +1,38 @@
+// Default Colors
+$black: #000 !default;
+$white: #fff !default;
+
+// Some standards
+$default-border-radius: 7px;
+
+// Colors
+$infinity-blue:  #00bbff;
+$infinity-blue-rgb: rgb(0,187,255);
+$infinity-light-blue :#00aeef;
+
+$infinity-green: #52EB86;
+$infinity-dark-green :#00211D;
+
+$infinity-white:#ffffff;
+$infinity-grey : #979797; // placeholders
+$smoky-black :#012622;
+
+$infinity-yellow-orange:#ffBC42;
+$infinity-dark-grey :#737373; // borders, input text
+
+$infinity-bright-green:#66ff66;
+$infinity-dark-gray-one:#f2f4f5;
+$infinity-dark-gray-one-rgb: rgb(115, 115, 115);
+// $infinity-dark-gray-two:#737373;
+$infinity-dark-blue:#003471;
+
+// gradients
+$infinity-blue-green-toright: linear-gradient(to right, $infinity-blue, $infinity-green) 1;
+
+// Box shadows
+$default-box-shadow:  2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+$default-card-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+
+// Fonts
+$font-style-2: 'Segoe UI';
+$font-style-1: 'Lato';

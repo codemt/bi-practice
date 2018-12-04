@@ -1,0 +1,29 @@
+
+.home__header {
+  font-family:$font-style-1;
+  font-weight: normal;
+  font-size: 45px;
+  text-align: center;
+  color: $infinity-blue;
+  display: flex;
+  flex-direction: column;
+  &::after {
+      content: '';
+      width: 116px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 7px;
+      background: linear-gradient(to right,#0bf 0%, #a9fdac 100%);
+  }
+}
+
+@media only screen and (max-width:425px){
+.home__header{
+  font-size:20px;
+  &:after{
+      width:47px;
+      height: 3px;
+  }
+}
+}

@@ -1,0 +1,98 @@
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+
+    &__wrapper {
+        padding: 30px 0;
+    }
+
+    &__heading::after {
+        width: 116px;
+        border-color: linear-gradient(#0bf 0%, #a9fdac 100%);
+        border-bottom: 3px solid;
+    }
+
+    &__card {
+        margin: auto;
+        padding: 20px 40px;
+        background: #fff;
+        box-shadow: $default-card-box-shadow;
+        text-align: center;
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 100px;
+            width: 300px;
+            margin-top: -30px;
+            margin-left: -75px;
+            background: #00aeef;
+            border-radius: 100px;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+
+    &__img {
+        max-width: 150px;
+        padding-bottom: 5px;
+    }
+
+    &__desc {
+        font-size: 20px;
+        text-align: center;
+        color: $infinity-dark-grey;
+        padding: 25px 0px;
+        max-width: 300px;
+    }
+
+    &__divider{
+        height: 200px;
+        width: 0px;
+        margin: 10px;
+        background: #00bfff;
+        border: 1px solid #00bfff;
+    }
+
+    &__btn {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 10px 25px;
+        box-shadow: $default-box-shadow;
+        background: linear-gradient(to right,#0bf 0%, #a9fdac 100%);
+        font-family: $font-style-1;
+        text-align: center;
+        border: 0;
+        text-align: center;
+        color: $infinity-white;
+        border-radius: 9px;
+        &-wrapper {
+            margin: 10px 0;
+            position: relative;
+        }
+    }
+}
+@media only screen and (max-width:425px) {
+
+    .connect {
+        padding: 0;
+        &__card {
+            margin: 1.5rem !important;
+            padding: 20px 0;
+            &:before {
+                left: 6px;
+                width: 220px;
+            }
+        }
+
+        &__wrapper {
+            padding: 0;
+        }
+
+        &__divider {
+            display: none;
+        }
+    }
+}

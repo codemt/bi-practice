@@ -1,0 +1,12 @@
+// Breakpoints - max-width
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+// $breakpoint-
+// 768
+// 992px
+// 1200px
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
